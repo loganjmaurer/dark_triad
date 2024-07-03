@@ -18,7 +18,7 @@ pca <- prcomp(df[, 1:27], scale. = TRUE)
 X <- pca$x
 
 #clustering
-kmeans_model <- kmeans(X, centers = 3)
+kmeans_model <- kmeans(df[, 1:27], centers = 3)
 
 # Visualize the clustering results using ggplot2
 ggplot(as.data.frame(X), aes(x = PC1, y = PC2, color = as.factor(kmeans_model$cluster))) +
