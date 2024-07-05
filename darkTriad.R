@@ -25,4 +25,4 @@ ggplot(as.data.frame(X), aes(x = PC1, y = PC2, color = as.factor(kmeans_model$cl
   geom_point() +
   labs(x = "Principal Component 1", y = "Principal Component 2", 
        color = "Cluster") +
-  ggtitle("K-Means Clustering on Principal Components")
+  ggtitle("The Principal Components of the Test Data by Cluster")
